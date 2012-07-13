@@ -75,21 +75,21 @@ PRODUCT_PACKAGES += \
 #	gps.msm8960
 
 # NFC Support
-PRODUCT_PACKAGES += \
-    libnfc \
-    libnfc_jni \
-    Nfc \
-    Tag \
-    com.android.nfc_extras
+#PRODUCT_PACKAGES += \
+#    libnfc \
+#    libnfc_jni \
+#    Nfc \
+#    Tag \
+#    com.android.nfc_extras
 
 # NFCEE access control
-ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access.xml
-else
-    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access_debug.xml
-endif
-PRODUCT_COPY_FILES += \
-    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
+#ifeq ($(TARGET_BUILD_VARIANT),user)
+#    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access.xml
+#else
+#    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access_debug.xml
+#endif
+#PRODUCT_COPY_FILES += \
+#    $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
 
 # Omx
 PRODUCT_PACKAGES += \
