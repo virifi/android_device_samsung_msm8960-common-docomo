@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8960-common/include
+TARGET_SPECIFIC_HEADER_PATH := device/samsung/msm8960-common-docomo/include
 
 # Bootloader
 TARGET_NO_BOOTLOADER := true
@@ -66,7 +66,7 @@ WIFI_DRIVER_FW_PATH_AP      := "/system/etc/wifi/bcmdhd_apsta.bin"
 WIFI_DRIVER_FW_PATH_P2P     := "/system/etc/wifi/bcmdhd_p2p.bin"
 
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/msm8960-common/recovery/graphics.c
+BOARD_CUSTOM_GRAPHICS := ../../../device/samsung/msm8960-common-docomo/recovery/graphics.c
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
@@ -91,7 +91,7 @@ TARGET_QCOM_HDMI_OUT := true
 TARGET_NO_BYPASS_CROPPING := true
 
 TARGET_USES_ION := true
-BOARD_EGL_CFG := device/samsung/msm8960-common/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/msm8960-common-docomo/configs/egl.cfg
 #COMMON_GLOBAL_CFLAGS += -DQCOM_ROTATOR_KERNEL_FORMATS
 
 # FM Radio

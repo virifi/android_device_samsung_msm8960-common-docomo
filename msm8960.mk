@@ -40,12 +40,12 @@ PRODUCT_COPY_FILES += \
 
 # EGL config
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/configs/egl.cfg:system/lib/egl/egl.cfg
+    device/samsung/msm8960-common-docomo/configs/egl.cfg:system/lib/egl/egl.cfg
 
 # Media config
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/configs/media_profiles.xml:system/etc/media_profiles.xml \
-	device/samsung/msm8960-common/configs/media_codecs.xml:system/etc/media_codecs.xml
+    device/samsung/msm8960-common-docomo/configs/media_profiles.xml:system/etc/media_profiles.xml \
+	device/samsung/msm8960-common-docomo/configs/media_codecs.xml:system/etc/media_codecs.xml
 
 # QCOM Display
 PRODUCT_PACKAGES += \
@@ -85,9 +85,9 @@ PRODUCT_PACKAGES += \
 
 # NFCEE access control
 ifeq ($(TARGET_BUILD_VARIANT),user)
-    NFCEE_ACCESS_PATH := device/samsung/msm8960-common/configs/nfcee_access.xml
+    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access.xml
 else
-    NFCEE_ACCESS_PATH := device/samsung/msm8960-common/configs/nfcee_access_debug.xml
+    NFCEE_ACCESS_PATH := device/samsung/msm8960-common-docomo/configs/nfcee_access_debug.xml
 endif
 PRODUCT_COPY_FILES += \
     $(NFCEE_ACCESS_PATH):system/etc/nfcee_access.xml
@@ -129,50 +129,50 @@ endif
 
 # keylayouts
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-    device/samsung/msm8960-common/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
-    device/samsung/msm8960-common/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl\
-	device/samsung/msm8960-common/keylayout/cyttsp-i2c.kl:system/usr/keylayout/cyttsp-i2c.kl \
-	device/samsung/msm8960-common/keylayout/fsa9485.kl:system/usr/keylayout/fsa9485.kl \
-	device/samsung/msm8960-common/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
-	device/samsung/msm8960-common/keylayout/msm8960-snd-card_Button_Jack.kl:system/usr/keylayout/msm8960-snd-card_Button_Jack.kl \
-	device/samsung/msm8960-common/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
-	device/samsung/msm8960-common/keylayout/sec_keys.kl:system/usr/keylayout/sec_keys.kl \
-	device/samsung/msm8960-common/keylayout/sec_powerkey.kl:system/usr/keylayout/sec_powerkey.kl \
-	device/samsung/msm8960-common/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
-    device/samsung/msm8960-common/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl
+    device/samsung/msm8960-common-docomo/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
+    device/samsung/msm8960-common-docomo/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl\
+	device/samsung/msm8960-common-docomo/keylayout/cyttsp-i2c.kl:system/usr/keylayout/cyttsp-i2c.kl \
+	device/samsung/msm8960-common-docomo/keylayout/fsa9485.kl:system/usr/keylayout/fsa9485.kl \
+	device/samsung/msm8960-common-docomo/keylayout/keypad_8960.kl:system/usr/keylayout/keypad_8960.kl \
+	device/samsung/msm8960-common-docomo/keylayout/msm8960-snd-card_Button_Jack.kl:system/usr/keylayout/msm8960-snd-card_Button_Jack.kl \
+	device/samsung/msm8960-common-docomo/keylayout/sec_key.kl:system/usr/keylayout/sec_key.kl \
+	device/samsung/msm8960-common-docomo/keylayout/sec_keys.kl:system/usr/keylayout/sec_keys.kl \
+	device/samsung/msm8960-common-docomo/keylayout/sec_powerkey.kl:system/usr/keylayout/sec_powerkey.kl \
+	device/samsung/msm8960-common-docomo/keylayout/sec_touchkey.kl:system/usr/keylayout/sec_touchkey.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_04e8_Product_7021.kl:system/usr/keylayout/Vendor_04e8_Product_7021.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
+    device/samsung/msm8960-common-docomo/keylayout/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl
 
 # Keychars
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
-    device/samsung/msm8960-common/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-    device/samsung/msm8960-common/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
-    device/samsung/msm8960-common/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
+    device/samsung/msm8960-common-docomo/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
+    device/samsung/msm8960-common-docomo/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
+    device/samsung/msm8960-common-docomo/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
+    device/samsung/msm8960-common-docomo/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
 
 # IDC
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-    device/samsung/msm8960-common/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
+    device/samsung/msm8960-common-docomo/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/samsung/msm8960-common-docomo/idc/qwerty2.idc:system/usr/idc/qwerty2.idc
 
 # Misc init scripts
 PRODUCT_COPY_FILES += \
-    device/samsung/msm8960-common/etc/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
-    device/samsung/msm8960-common/etc/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
-    device/samsung/msm8960-common/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
+    device/samsung/msm8960-common-docomo/etc/init.qcom.modem_links.sh:system/etc/init.qcom.modem_links.sh \
+    device/samsung/msm8960-common-docomo/etc/init.qcom.mdm_links.sh:system/etc/init.qcom.mdm_links.sh \
+    device/samsung/msm8960-common-docomo/etc/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh
 
 # Charger
 PRODUCT_PACKAGES += charger charger_res_images
 PRODUCT_COPY_FILES += \
-	device/samsung/msm8960-common/lpm/lpm.rc:root/lpm.rc \
-	device/samsung/msm8960-common/lpm/init.qcom.lpm_boot.sh:root/init.qcom.lpm_boot.sh
+	device/samsung/msm8960-common-docomo/lpm/lpm.rc:root/lpm.rc \
+	device/samsung/msm8960-common-docomo/lpm/init.qcom.lpm_boot.sh:root/init.qcom.lpm_boot.sh
 
 # Needed to reset bootmode when leaving recovery
 PRODUCT_COPY_FILES += \
@@ -185,5 +185,5 @@ PRODUCT_TAGS += dalvik.gc.type-precise
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
 
 # Common overlay
-DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8960-common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/samsung/msm8960-common-docomo/overlay
 
